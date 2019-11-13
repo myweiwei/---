@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/profile/profile",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#E54847",
+    "navigationBarTitleText": "最新电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#E54847",
+    
+    "list": [
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath":"images/dianying1.png",
+        "selectedIconPath":"images/dianying.png",
+        "color":"#aaa"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/wode1.png",
+        "selectedIconPath": "images/wode.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,28 @@
+/* pages/movie/movie.wxss */
+.movie {
+  height:300rpx;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.movie-img {
+  width:200rpx;
+  height:100%;
+}
+.movie-info {
+  flex:1;
+}
+.movie-title {
+  color:#666;
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+.movie-average {
+  color:#faaf00;
+}
+.van-button {
+  height:25px!important;
+  line-height:25px!important;
+  padding:0 4px!important;
+  font-size:20rpx;
+} 
