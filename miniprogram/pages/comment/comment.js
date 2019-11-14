@@ -101,10 +101,8 @@ Page({
    */
   onLoad: function (options) {
     let me=this;
-    
     me.setData({
-      //movieid: options.movieid
-      movieid: '30402296'
+      movieid: options.movieid
     });
     me.getCommentList();
   },

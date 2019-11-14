@@ -59,7 +59,6 @@ Page({
     })
   },
   toComment:function(event){
-    console.log(event.target.dataset.movieid);
     wx.navigateTo({
       url: `../comment/comment?movieid=${event.target.dataset.movieid}`,
     })

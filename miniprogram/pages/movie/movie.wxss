@@ -11,6 +11,7 @@
 }
 .movie-info {
   flex:1;
+  margin-left:20rpx;
 }
 .movie-title {
   color:#666;
@@ -21,8 +22,6 @@
   color:#faaf00;
 }
 .van-button {
-  height:25px!important;
-  line-height:25px!important;
-  padding:0 4px!important;
   font-size:20rpx;
+  margin-top:100rpx;
 } 

@@ -1,4 +1,4 @@
-<view wx:for='{{movieList}}' wx:key='{{index}}' class='movie'>
+<view wx:for='{{movieList}}' wx:key='{{index}}' class='movie'  bindtap="toComment" data-movieid='{{item.id}}'>
   <image class='movie-img' src='{{item.images.small}}'></image>
   <view class='movie-info'>
     <view class='movie-title'>{{item.title}}</view>
