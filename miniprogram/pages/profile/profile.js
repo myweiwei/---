@@ -5,16 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    latitude:'',
+    longitude:'',
+    markers:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let me=this;
+    me.getLocation();
   },
-
+  getLocation:function(){
+    wx.getLocation({
+      type: 'wgs84',
+      success: (res) => {
+        console.log(res);
+        this.setData({
+          latitude: res.latitude ,
+          longitude: res.longitude,
+          markers:[{
+            id:1,
+            iconPath: "../../images/pos.png",
+            latitude: res.latitude,
+            longitude: res.longitude,
+            width: 30,
+            height: 30
+          }]
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

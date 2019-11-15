@@ -59,9 +59,18 @@ Page({
     })
   },
   toComment:function(event){
-    wx.navigateTo({
-      url: `../comment/comment?movieid=${event.target.dataset.movieid}`,
-    })
+    console.log(event);
+    if (event.target.dataset.movieid){
+      wx.navigateTo({
+        url: `../comment/comment?movieid=${event.target.dataset.movieid}`
+      })
+    }
+    else {
+      wx.navigateTo({
+        url: `../comment/comment?movieid=${event.currentTarget.dataset.movieid}`
+      })
+    }
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
